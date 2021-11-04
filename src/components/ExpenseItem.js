@@ -1,9 +1,10 @@
+import './ExpenseItem.css'
 function ExpenseItem() {
     return (
         <div>
-            <div>Date</div>
-            <h2>Time</h2>
-            <div>Amount</div>
+            <div>Date: Today</div>
+            <h2>Car Insurance</h2>
+            <div>$294.67</div>
         </div>)
 }
 
