@@ -1,10 +1,10 @@
 import './Card.css'
 
-function Card() {
+function Card(props) {
+    // in order to add all styling from different sources, the className from outside the Card is converted into a card format first
+    const classes = 'card ' + props.className
     return (
-        <div className='card'>
-
-        </div>
+        <div className={classes}>{props.children}</div>
     )
 }
 
