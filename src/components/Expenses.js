@@ -1,5 +1,5 @@
 import ExpenseItem from "./ExpenseItem"
-import './ExpenseInfo.css'
+import './Expenses.css'
 
 
 function ExpenseInfo({ expenses} ) {
