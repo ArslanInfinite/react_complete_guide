@@ -26,9 +26,7 @@ const App = () => {
   return (
     <div>
       <NewExpense />
-      <p>This is also visible.</p>
-      <Expenses expenses={expenses}/>
-
+      <Expenses expenses={expenses} />
     </div>
   );
 }
