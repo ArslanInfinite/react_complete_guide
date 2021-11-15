@@ -1,11 +1,11 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 
 const ExpenseForm = () => {
-    // const [enteredTitle, setEnteredTitle] = useState('')
+    const [enteredTitle, setEnteredTitle] = useState('')
 
     const titleChangeHandler = (event) => {
-        console.log('hello')
-        // setEnteredTitle(event.target.value)
+        console.log(event.target.value)
+        setEnteredTitle(event.target.value)
     }
 
     return (
