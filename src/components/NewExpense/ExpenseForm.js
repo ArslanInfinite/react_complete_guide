@@ -41,8 +41,13 @@ const ExpenseForm = () => {
     }
 
     const submitHandler = (event) => {
-        
+        const expenseData = {
+            title: enteredTitle, 
+            amount: enteredAmount, 
+            date: new Date(enteredDate)
+        }
         event.preventDefault()
+        console.log(expenseData, expenseData.title, expenseData.amount, expenseData.date)
     }
 
     return (
