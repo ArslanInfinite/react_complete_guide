@@ -6,7 +6,7 @@ import ExpensesFilter from './ExpensesFilter'
 import './Expenses.css'
 
 
-const ExpenseInfo = ({ expenses} ) => {
+const Expenses = ({ expenses} ) => {
     const [filteredYear, setFilteredYear] = useState('2020')
 
     const filterChangeHandler = selectedYear => {
@@ -14,6 +14,7 @@ const ExpenseInfo = ({ expenses} ) => {
     }
 
     return (
+        <div>
         <Card className='expenses'>
             <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
             <ExpenseItem
@@ -36,8 +37,9 @@ const ExpenseInfo = ({ expenses} ) => {
                 amount={expenses[3].amount}
                 date={expenses[3].date} />
         </Card>
+        </div>
     )
 
 }
 
-export default ExpenseInfo
+export default Expenses
