@@ -17,16 +17,16 @@ const Expenses = ({ expenses }) => {
         <div>
             <Card className='expenses'>
                 <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-                {expenses.map(expense => 
-                <ExpenseItem 
-                title={expense.title} 
-                amount={expense.amount} 
-                date={expense.date} 
-                />)}
+                {expenses.map(expense =>
+                    <ExpenseItem
+                        title={expense.title}
+                        amount={expense.amount}
+                        date={expense.date}
+                    />
+                )}
             </Card>
         </div>
     )
-
 }
 
 export default Expenses
