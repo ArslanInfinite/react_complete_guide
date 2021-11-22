@@ -27,15 +27,16 @@ const DUMMY_EXPENSES = [
 
 const App = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES)
-  
+
   const addExpenseHandler = expense => {
-    console.log('In App.js')
-    console.log(expense)
+    setExpenses(prevExpenses => {
+      return [expense, ...expenses]
+    })
   }
 
   return (
     <div>
-      <NewExpense onAddExpense={addExpenseHandler}/>
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses expenses={expenses} />
     </div>
   );
