@@ -14,7 +14,9 @@ const ExpensesList = props => {
             />
         )
     }
-    
+    return <ul className='expenes-list'>
+
+    </ul>
 }
 
 export default ExpensesList
