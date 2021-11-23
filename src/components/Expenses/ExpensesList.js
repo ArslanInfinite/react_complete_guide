@@ -1,9 +1,11 @@
+import ExpenseItem from "./ExpenseItem"
+
 const ExpensesList = props => {
 
   let expensesContent = <p>No Expenses Found</p>
 
-    if (filteredExpenses.length > 0) {
-        expensesContent = filteredExpenses.map(expense =>
+    if (props.items.length > 0) {
+        expensesContent = props.items.map(expense =>
             <ExpenseItem
                 key={expense.id}
                 title={expense.title}
