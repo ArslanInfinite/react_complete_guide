@@ -23,7 +23,7 @@ const Expenses = (props) => {
                     selected={filteredYear}
                     onChangeFilter={filterChangeHandler}
                 />
-                <ExpensesList items={filteredExpenses}/>
+                <ExpensesList items={filteredExpenses} />
                 {/* {filteredExpenses.length > 0 ?
                     <p>No Expenses Found</p> 
                     :
