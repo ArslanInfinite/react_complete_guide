@@ -9,7 +9,8 @@ const Chart = props => {
     value={dataPoint.value}
     maxValue={null}
     label={dataPoint.label}
-    />)}
+    />
+    )}
   </div>
 }
 
